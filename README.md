@@ -1,12 +1,13 @@
 # node-red-contrib-join
 Node-Red Node to join 2 or more messages
 
-<img src="https://github.com/Chris1234567899/node-red-contrib-join/blob/master/screenshots/screenshot1.PNG" />
+<img src="https://github.com/Chris1234567899/node-red-contrib-join/blob/master/screenshots/screenshot2.PNG" />
 
-<p> Messages from all input nodes are joined and put into the new payload. Since the messages might not arrive on the same time, there can be defined one input as trigger. 
-The input node that triggers can be defined by its topic. 
-If messages arrive very asynchronously it could happen that one node sends multiple inputs while the triggering one just once. 
-In such a case you can choose if you want to overwrite multiple inputs (for every node) or just add them.
+<p> Messages from all input nodes are joined and put into the new payload. Since the messages might not arrive on the same time, there can be defined one input node as trigger. 
+The input node that triggers must be defined by its topic. 
+If messages arrive very asynchronously it could happen that one node sends multiple inputs in the time interval where the triggering node sends just once. 
+In such a case you can choose if you want to overwrite the multiple input messages (for every node) or just add them.
+	
 </p></br>
 The new msg would look for example like this for 3 input nodes:
 
