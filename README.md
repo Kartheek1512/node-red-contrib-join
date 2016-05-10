@@ -10,7 +10,33 @@ In such a case you can choose if you want to overwrite multiple inputs (for ever
 </br>
 The new msg would look for example like this for 3 input nodes:
 </br>
-	{ "payload": { "joinedMsgs": [ { "topic": "abc", "payload": "abc string", "_msgid": "e677e6b5.2a7738" }, { "topic": "def", "payload": "def string", "_msgid": "94a9460.f28acb8" }, { "topic": "trigger", "payload": "trigger string", "_msgid": "b063ac1.29ddb5" } ] }, "topic": "joined topic", "_msgid": "4e340eed.18b2b" }</p>
+
+	{
+	   "payload":{
+	      "joinedMsgs":[
+	         {
+	            "topic":"abc",
+	            "payload":"abc string",
+	            "_msgid":"e677e6b5.2a7738"
+	         },
+	         {
+	            "topic":"def",
+	            "payload":"def string",
+	            "_msgid":"94a9460.f28acb8"
+	         },
+	         {
+	            "topic":"trigger",
+	            "payload":"trigger string",
+	            "_msgid":"b063ac1.29ddb5"
+	         }
+	      ]
+	   },
+	   "topic":"joined topic",
+	   "_msgid":"4e340eed.18b2b"
+	}
+	
+</p>
+	
 	
 <h2>License: </h2>
 <b>MIT:</b>
